@@ -5,7 +5,6 @@ import javax.persistence.Id;
 
 @Entity    //used to mark any class as Entity
 //@Table(name="mystudents") //to change the name of your table(table details)
-
 public class Student {
 	
 	@Id //refered as primary key..(use to mark colum as id(primary key))

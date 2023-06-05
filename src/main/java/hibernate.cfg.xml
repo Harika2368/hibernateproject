@@ -19,15 +19,19 @@
 			org.hibernate.dialect.PostgreSQLDialect
 		</property>
 		<property name="hbm2ddl.auto">
-			create
+			update
 		</property>
 		<property name="show_sql">
 			true
 		</property>
+		<property name="format_sql">
+			true
+		</property>
+		
 		<mapping class="cgginterns.hibernate.Student" />
 		<mapping class="cgginterns.hibernate.Address" />
-		<!-- <mapping class="cgginterns.hibernate.map.Question"/>
-		<mapping class="cgginterns.hibernate.map.Answer"/>-->
+		<mapping class="cgginterns.hibernate.map1.Question1"/>
+		<mapping class="cgginterns.hibernate.map1.Answer1"/>
 		
 		<!--<mapping class="cgginterns.hibernate.map1.Question"/>
 		<mapping class="cgginterns.hibernate.map1.Answer"/>

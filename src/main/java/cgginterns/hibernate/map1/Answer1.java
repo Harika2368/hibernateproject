@@ -6,26 +6,26 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Answer {
+public class Answer1 {
 	@Id
 	@Column(name="answer_id")
 	private int answerId;
 	private String answer;
 	@ManyToOne
 	@JoinColumn(name="q_id")
-    private Question question;
-	public Question getQuestion() {
+    private Question1 question;
+	public Question1 getQuestion() {
 		return question;
 	}
-	public void setQuestion(Question question) {
+	public void setQuestion(Question1 question) {
 		this.question = question;
 	}
-	public Answer(int answerId, String answer) {
+	public Answer1(int answerId, String answer) {
 		super();
 		this.answerId = answerId;
 		this.answer = answer;
 	}
-	public Answer() {
+	public Answer1() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
