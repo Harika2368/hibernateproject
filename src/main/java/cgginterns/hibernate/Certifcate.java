@@ -28,5 +28,10 @@ public class Certifcate {
 	public void setDuration(String duration) {
 		this.duration = duration;
 	}
+	@Override
+	public String toString() {
+		return "Certifcate [course=" + course + ", duration=" + duration + "]";
+	}
 
+	
 }

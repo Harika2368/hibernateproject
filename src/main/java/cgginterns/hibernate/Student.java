@@ -46,6 +46,10 @@ public class Student {
 	public void setCerti(Certifcate certi) {
 		this.certi = certi;
 	}
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", city=" + city + ", certi=" + certi + "]";
+	}
 	
 
 }

@@ -2,8 +2,10 @@ package cgginterns.hibernate.map;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
@@ -15,7 +17,7 @@ public class Brand {
 	@Column(name="brand_name")
 	private String brandname;
 	
-	@OneToMany(mappedBy="brand")
+	@OneToMany(mappedBy="brand",fetch=FetchType.LAZY,cascade=CascadeType.ALL)
 	List<Products> products;
 	
 	public List<Products> getProducts() {
